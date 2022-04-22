@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekrutacja</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+</head>
+<body>
+    <div class="container">
+        <p>container width: 1170px</p>
+        <p>gutter: 30px</p>
+    </div>
+    <div class="grid__position">
+        <div class="first-grid-row">
+            <div class="item">
+                <p>1</p>
+                <p>height 200px</p>
+            </div>
+            <div class="item">
+                <p>2</p>
+                <p>height 200px</p>
+            </div>
+            <div class="item">
+                <p>3</p>
+                <p>height 200px</p>
+            </div>
+        </div>
+        <div class="second-grid-row">
+            <div class="item">
+                <p>4</p>
+                <p>height 200px</p>
+            </div>
+            <div class="item">
+                <p>5</p>
+                <p>height 200px</p>
+            </div>
+            <div class="item">
+                <p>6</p>
+                <p>height 200px</p>
+            </div>
+        </div>
+        <div class="third-grid-row">
+            <div class="third-grid-row__item">
+                <div class="third-grid-row__block block1">1</div>
+                <div class="third-grid-row__block block2">2</div>
+                <div class="third-grid-row__block block3">3</div>
+                <div class="third-grid-row__block block4">4</div>
+            </div>
+            <div class="third-grid-row_column">
+                <div class="third-grid-row_column__elem">1</div>
+                <div class="third-grid-row_column__elem">2</div>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+
+      <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+<script src=" https://code.jquery.com/jquery-3.1.1.js "integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script src="json.js"></script>
+</body>
+</html>
